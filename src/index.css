@@ -235,14 +235,13 @@ h2,h3,h4,h5,h6 {
     align-items: center;
     padding: 40px;
     color: #fff;
-    gap: 20px;
+    /* gap: 20px; */
     text-align: center;
+    height: 300px;
 }
 
-.no3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
+
 
 .no3 div:nth-child(1) {
     background-color: #3BAFBF;
@@ -369,6 +368,17 @@ h2,h3,h4,h5,h6 {
 .footer a {
     text-decoration: none;
     color: inherit;
+}
+
+.contact2 input {
+    height: 60px;
+    background-color: #ebebebaf;
+    border: #8d8d8daf 1px solid;
+}
+
+.contact2 form {
+    height: 400px;
+    width: 100%;
 }
 
 @media (max-width: 600px) {

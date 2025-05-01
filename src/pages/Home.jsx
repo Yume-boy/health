@@ -27,9 +27,8 @@ const img =[
     <div className=''>
      <div className='hero '>
       <div className='container'>
-        <h2 className='mt-5'>Find Your <span>Perfect Job</span></h2>
-        <p>Healtcare Staffing Specialists.
-          <br />
+        <h2 className='mt-5'>Heartfelt care, <span> Trusted solutions</span></h2>
+        <p>
            CVBhealthcare leading provider of temporary and permanent healthcare
            <br />
           solutions offering 24/7 coverage
@@ -43,10 +42,10 @@ const img =[
 
         <div class="text-center m-4 px-3 py-5 rounded"style={{backgroundColor: '#e7e7e7', color: '#3F4A49'}}  >
           <div class="row align-items-start">
-            <div class="col">
+            <div class="col-12 col-md-6 mb-3 ">
               <h2 className='fs-1 fw-semibold' >Our approach</h2>
             </div>
-            <div class="col text-start fs-4 ">
+            <div class="col-12 col-md-6 text-start fs-4 ">
               <p className='fw-normal '>At CVBhealthcare, we are committed to delivering outstanding healthcare through compassion, clinical excellence, and innovation. Our patient-centered approach ensures high-quality care that is personalized to meet each individual's unique needs.</p>
               <button type="button" class="btn p-3 my-5" style={{backgroundColor: '#40BACA', color:'#fff'}} >Get Started</button>
             </div>
@@ -55,54 +54,36 @@ const img =[
      </section>
 
      <section className='form-field py-5'>
-        {/* <div className='container py-5 baby'>
-        <h3 className='text-center'>Find your Perfect Job</h3>
-        <div className='line mt-3'></div>
-        <h4 className='mt-4'>CVBHealthcare for flexible and permanent healthcare jobs</h4>
-        <form action="" className='my-5'>
-          <span>
-            <div>
-              <input type="text" placeholder='NAME'/>
-            </div>
-            <div>
-              <input type="text" placeholder='NAME'/>
-            </div>
-            <div>
-              <input type="text" placeholder='NAME'/>
-            </div>
-            <div>
-
-            </div>
-          </span>
-          <div className='mt-5'>
-            <input type="text" placeholder='MESSAGE' style={{height: '150px'}}/>
-          </div>
-          <button className='mt-5' type='submit'>CONTACT US</button>
-          <a href=""><button className='mt-5' >APPLY NOW</button></a>
-        </form>
-        </div> */}
         <h2 className='fs-1 py-3 text-white'>Healthcare Professionals</h2>
         <div class="container text-center pt-4">
-          <div class="row align-items-start my-4">
-            <div class="col-12 col-md-6 col-lg-3 bg-white py-4 rounded mx-1" >
-              <img src={nurse} className='rounded-circle ' style={{height: '200px', width: '200px'}} alt="" />
-              <h4 className='my-3'>Nurses</h4>
-              <p>Advance your career with CarePoint! Connect with us today to join our outstanding team of Agency Nurses or explore permanent and part-time opportunities that align with your goals. Your ideal role is just one step away!</p>
+          <div class="row justify-content-between align-items-start my-4">
+            <div class="col-12 col-md-6 col-lg-3  mb-2 d-flex justify-content-center"  >
+              <div style={{width: '95%'}} className='bg-white py-4  rounded'>
+                <img src={nurse} className='rounded-circle ' style={{height: '200px', width: '200px'}} alt="" />
+                <h4 className='my-3'>Nurses</h4>
+                <p>Advance your career with CarePoint! Connect with us today to join our outstanding team of Agency Nurses or explore permanent and part-time opportunities that align with your goals. Your ideal role is just one step away!</p>
+              </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 bg-white py-4 rounded mx-1">
-            <img src={healthCare} className='rounded-circle' style={{height: '200px', width: '200px'}} alt="" />
-            <h4 className='my-3'>Healthcare Assistants</h4>
-            <p>Join our exceptional and in-demand team of healthcare assistants, committed to making a real difference in the lives of vulnerable individuals every day. Be a part of this rewarding journey rooted in compassion, dedication, and care.</p>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center  mb-2">
+              <div  style={{width: '95%'}} className='bg-white py-4  rounded'>
+                <img src={healthCare} className='rounded-circle' style={{height: '200px', width: '200px'}} alt="" />
+                <h4 className='my-3'>Healthcare Assistants</h4>
+                <p>Join our exceptional and in-demand team of healthcare assistants, committed to making a real difference in the lives of vulnerable individuals every day. Be a part of this rewarding journey rooted in compassion, dedication, and care.</p>
+              </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 bg-white py-4 rounded mx-2">
-            <img src={Support} className='rounded-circle' style={{height: '200px', width: '200px'}} alt="" />
-            <h4 className='my-3'>Support Workers</h4>
-            <p>Become a valued member of our support team at CarePoint Healthcare Solutions as a Live-in or Supported Living Support Worker. Deliver compassionate, day-to-day care that empowers individuals to live with independence and dignity.</p>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center   mb-2">
+              <div style={{width: '95%'}} className='bg-white py-4  rounded'>
+                <img src={Support} className='rounded-circle' style={{height: '200px', width: '200px'}} alt="" />
+                <h4 className='my-3'>Support Workers</h4>
+                <p>Become a valued member of our support team at CarePoint Healthcare Solutions as a Live-in or Supported Living Support Worker. Deliver compassionate, day-to-day care that empowers individuals to live with independence and dignity.</p>
+              </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 bg-white py-4 rounded mx-2">
-            <img src={mentalSupport} className='rounded-circle' style={{height: '200px', width: '200px'}} alt="" />
-            <h4 className='my-3'>Emotional Support</h4>
-            <p>Become part of a dedicated team providing emotional support both in person and online. Work alongside psychologists, therapists, and wellness professionals to help individuals find balance. Make a meaningful impact every day.</p>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mb-2 ">
+              <div style={{width: '95%'}} className='bg-white py-4  rounded'>
+                <img src={mentalSupport} className='rounded-circle' style={{height: '200px', width: '200px'}} alt="" />
+                <h4 className='my-3'>Emotional Support</h4>
+                <p>Become part of a dedicated team providing emotional support both in person and online. Work alongside psychologists, therapists, and wellness professionals to help individuals find balance. Make a meaningful impact every day.</p>
+              </div>
             </div>
           </div>
           <button type="button" class="btn p-3 my-5" style={{backgroundColor: '#40BACA', color:'#fff', width: '200px'}} >Learn More</button>
@@ -134,35 +115,40 @@ const img =[
           </div>
      </section>
 
-     <section className='no3'>
-      <div>
+     <div className=''>
+     <section className='no3 w-100 row align-items-center'>
+      <div className='col-12 col-md-4'>
         <h4>NURSES</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>Contact us to join our team of Agency Nurses or to find your ideal permanent role.</h6>
         <button>LEARN MORE</button>
       </div>
-      <div>
+      <div className='col-12 col-md-4'>
         <h4>Healthcare Assistants</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>Join our highly talented and sought-after team of Healthcare Assistants improving the lives of vulnerable people on a daily basis.</h6>
         <button>LEARN MORE</button>
       </div>
-      <div>
+      <div className='col-12 col-md-4'>
         <h4>Are you looking for staff?</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>Flexible, quality care staff to meet your needs. CVB staff are widely recognised as one of the best in the industry.</h6>
         <button>LEARN MORE</button>
       </div>
      </section>
+     </div>
 
-     <section className='no2'>
+     <section className='no2 container'>
        <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/icon-6.png" alt="" />
         <h3>Our Clients</h3>
         <div className='line mt-3'></div>
-        <h4 className='mt-4'>As a leading healthcare recruitment specialist we can provide both temporary and permanent solutions</h4>
+        <h4 className='mt-4'>"CVBhealthcare has been a lifesaver for my family. Their caregivers are kind, professional, and truly care about their ” – Sarah T.
+        <br />
+        <br />
+"The medical staff is top-notch, and they always go above and beyond to provide the best care possible." – David R.</h4>
      </section>
 
-     <section className='no4'>
+     {/* <section className='no4'>
       
      <div className="carousel-container">
       <div className="carousel-track">
@@ -171,8 +157,12 @@ const img =[
         ))}
       </div>
     </div>
-     </section>
+     </section> */}
 
+        <div className='d-flex align-items-center flex-column py-5' style={{backgroundColor: '#495A58'}}>
+          <h2 className='fs-1 fw-semibold mt-5 text-white'>Get started with us, today. </h2>
+          <button type="button" class="btn text-white my-5" style={{backgroundColor: '#40BACA', height: '80px', width: '150px'}}>Get Started</button>
+        </div>
     </div>
   )
 }

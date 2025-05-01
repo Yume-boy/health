@@ -7,9 +7,9 @@ const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
 const Client = lazy(() => import('./pages/Client'))
 const Contact = lazy(() => import('./pages/Contact'))
-const HCA = lazy(() => import('./pages/HCA'))
+const Services = lazy(() => import('./pages/Services'))
 const Nurses = lazy(() => import('./pages/Nurses'))
-const Training = lazy(() => import('./pages/Training'))
+const Team = lazy(() => import('./pages/Team'))
 const WorkWithUs = lazy(() => import('./pages/WorkWithUs'))
 const AppLayout = lazy(() => import('./pages/AppLayout'))
 
@@ -59,10 +59,10 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'HCA',
+        path: 'services',
         element: (
           <Suspense fallback={<div>Loading...</div>}>
-            <HCA />
+            <Services />
           </Suspense>
         ),
       },
@@ -75,10 +75,10 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'training',
+        path: 'team',
         element: (
           <Suspense fallback={<div>Loading...</div>}>
-            <Training />
+            <Team />
           </Suspense>
         ),
       },

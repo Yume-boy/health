@@ -7,7 +7,17 @@ import { NavLink } from 'react-router-dom'
 const HCA = () => {
   return (
     <div>
-      <div className='hero-3 text-white text-center'>
+      <div className='hero-3 text-white text-center'
+        style={{
+          background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${service})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          height: '500px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center', 
+          }}>
           <div className='container'>
             <h2 className='mt-5'>Services</h2>
           </div>

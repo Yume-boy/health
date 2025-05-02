@@ -2,11 +2,22 @@ import React from 'react'
 import team1 from './team1.jpeg'
 import team2 from './team2.jpg'
 import team3 from './team3.jpg'
+import team from './team.avif'
 
 const Training = () => {
   return (
     <div>
-      <div className='hero-4 text-white text-center '>
+      <div className='hero-4 text-white text-center'
+        style={{
+          background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${team})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          height: '500px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center', 
+          }}>
           <div className='container d-flex justify-content-center'>
             <h2 className='mt-5 w-75 '>Find the therapist that best suits your needs.</h2>
           </div>

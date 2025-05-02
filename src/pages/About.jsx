@@ -1,11 +1,22 @@
 import React from 'react'
 import values from './values.jpeg'
 import woman from './womanOnAComputer.jpeg'
+import about from './aboutUs.jpeg'
 
 const About = () => {
   return (
     <div>
-       <div className='hero-2 text-white text-center'>
+       <div className='hero-2 text-white text-center'
+        style={{
+          background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${about})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          height: '500px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center', 
+          }}>
           <div className='container'>
             <h2 className='mt-5'>About Us</h2>
           </div>

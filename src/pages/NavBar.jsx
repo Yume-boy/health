@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from './logo.jpg'
 
 const NavBar = () => {
   return (
     <div className=' sticky-top'>
   <nav class="navbar navbar-expand-md bg " aria-label="Fourth navbar example">
     <div class="container-fluid">
-      <Link class="navbar-brand" to="/"><img src="https://cvbhealthcare.co.uk/wp-content/uploads/2019/12/CVB_logo_small-1.png" srcset="https://cvbhealthcare.co.uk/wp-content/uploads/2019/12/CVB_logo_small-1.png 1x, https://cvbhealthcare.co.uk/wp-content/uploads/2019/12/CVB.png 2x" width="157" height="50" alt="CVBHealthcare Logo" data-retina_logo_url="https://cvbhealthcare.co.uk/wp-content/uploads/2019/12/CVB.png" class="fusion-standard-logo" /></Link>
+      <Link class="navbar-brand" to="/"><img src={logo}  width="70" height="70" alt="CarePoint Logo"  class="fusion-standard-logo" /></Link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

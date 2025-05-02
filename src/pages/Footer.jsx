@@ -1,5 +1,7 @@
 import React from 'react'
 import { MapPin, Phone, Mail, CircleArrowRight, } from 'lucide-react';
+import logo from './logo.jpg'
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -7,10 +9,10 @@ const Footer = () => {
       <section className='footer px-5'>
      <footer class="row  py-5  border-top">
     <div class="col-12 col-sm-4 mb-3">
-      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-       <img src="https://i0.wp.com/cvbhealthcare.co.uk/wp-content/uploads/2019/11/CVBHealthcare_logo_black-1.png?w=1170&ssl=1" alt="" style={{width: '80%'}}/>
-      </a>
-      <p class="text-body-secondary">We are a specialist nursing and care agency covering the whole of North East Somerset, supplying healthcare personnel to establishments such as care home or hospitals and providing domiciliary care for private service users.</p>
+      <NavLink to="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+       <img src={logo}/>
+      </NavLink>
+      <p class="text-body-secondary">We are a trusted agency supplying qualified healthcare staff to care homes, hospitals, and other establishments. We also provide personalized domiciliary care, supporting private individuals with compassionate, professional care right at home.</p>
     </div>
 {/* 
     <div class="col mb-3">
@@ -21,9 +23,9 @@ const Footer = () => {
       <h5>CONTACT INFORMATION</h5>
       <div className='short-line mt-3 mb-5'></div>
       <ul class="foot flex-column">
-        <li class="nav-item  mb-2"><a href="#" class="nav-link split p-0 text-body-secondary"><MapPin className='icon'/> Bristol, Saltford, Bath Road 474 B, Postcode BS31 3DJ, United Kingdom</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary split"><Phone className='icon'/> +44 07447 918 683</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary split"><Mail className='icon'/> Contact@CVBHealthcare.co.uk</a></li>
+        <li class="nav-item  mb-2"><NavLink to="#" class="nav-link split p-0 text-body-secondary"><MapPin className='icon'/> Bristol, Saltford, Bath Road 474 B, Postcode BS31 3DJ, United Kingdom</NavLink></li>
+        <li class="nav-item mb-2"><a href="tel:+4407447918683" class="nav-link p-0 text-body-secondary split"><Phone className='icon'/> +44 07447 918 683</a></li>
+        <li class="nav-item mb-2"><a href="mailto:Contact@CarePointhealthSolutions.co.uk" class="nav-link p-0 text-body-secondary split"><Mail className='icon'/> Contact@CarePointhealthSolutions.co.uk</a></li>
       </ul>
     </div>
 
@@ -31,18 +33,18 @@ const Footer = () => {
       <h5>MEDICAL DEPARTMENTS</h5>
       <div className='short-line mt-3 mb-5'></div>
       <ul class="foot flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled'/><span>About</span></a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled'/><span>Clients</span></a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled'/><span>Nurses</span></a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled'/><span>Healthcare Assistance</span></a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled'/><span>Work with us</span></a></li>
+        <li class="nav-item mb-2"><NavLink to="/about" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>About</span></NavLink></li>
+        <li class="nav-item mb-2"><NavLink to="/services" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>Services</span></NavLink></li>
+        <li class="nav-item mb-2"><NavLink to="/team" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>Team</span></NavLink></li>
+        <li class="nav-item mb-2"><NavLink to="/contact" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>Contact</span></NavLink></li>
+        {/* <li class="nav-item mb-2"><NavLink to="#" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled'/><span>Work with us</span></NavLink></li> */}
       </ul>
 
-      <a href="">
+      <NavLink to="/contact">
         <div className='contact'>
         CONTACT US
         </div>
-      </a>
+      </NavLink>
     </div>
   </footer>
      </section>

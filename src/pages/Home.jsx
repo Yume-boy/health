@@ -29,7 +29,7 @@ const img =[
       <div className='container'>
         <h2 className='mt-5'>Heartfelt care, <span> Trusted solutions</span></h2>
         <p>
-           CVBhealthcare leading provider of temporary and permanent healthcare
+         CarePoint Healthcare Solutions leading provider of temporary and permanent healthcare
            <br />
           solutions offering 24/7 coverage
         </p>
@@ -46,7 +46,7 @@ const img =[
               <h2 className='fs-1 fw-semibold' >Our approach</h2>
             </div>
             <div class="col-12 col-md-6 text-start fs-4 ">
-              <p className='fw-normal '>At CVBhealthcare, we are committed to delivering outstanding healthcare through compassion, clinical excellence, and innovation. Our patient-centered approach ensures high-quality care that is personalized to meet each individual's unique needs.</p>
+              <p className='fw-normal '>At CarePoint Healthcare Solutions, we are committed to delivering outstanding healthcare through compassion, clinical excellence, and innovation. Our patient-centered approach ensures high-quality care that is personalized to meet each individual's unique needs.</p>
               <button type="button" class="btn p-3 my-5" style={{backgroundColor: '#40BACA', color:'#fff'}} >Get Started</button>
             </div>
           </div>
@@ -96,7 +96,7 @@ const img =[
      <div class="row align-items-start">
             <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
               <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/icon-5.png" alt="" />
-              <h3>WORK WITH CVBHealthcare</h3>
+              <h3>WORK WITH CarePoint</h3>
               <div className='line mt-3'></div>
                <h4 className='mt-4'>We will give you the flexibility to manage your own market along with the training and support to develop your career and to maximise your career and earning potential.</h4>
             </div>
@@ -116,25 +116,33 @@ const img =[
      </section>
 
      <div className=''>
+      <h2 className='text-center my-4'>Our Services</h2>
      <section className='no3 w-100 row align-items-center'>
-      <div className='col-12 col-md-4'>
-        <h4>NURSES</h4>
+      <div className='col-12 col-md-3'>
+        <h4>Home Care</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
-        <h6>Contact us to join our team of Agency Nurses or to find your ideal permanent role.</h6>
+        <h6>We provide professional and personalized home care services to help your loved ones live comfortably and safely in their own homes.</h6>
         <button>LEARN MORE</button>
       </div>
-      <div className='col-12 col-md-4'>
-        <h4>Healthcare Assistants</h4>
+      <div className='col-12 col-md-3'>
+        <h4>Elderly & Disability Care</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
-        <h6>Join our highly talented and sought-after team of Healthcare Assistants improving the lives of vulnerable people on a daily basis.</h6>
+        <h6>We offer compassionate, reliable care services that empower seniors and individuals with disabilities to live independently and with dignity. </h6>
         <button>LEARN MORE</button>
       </div>
-      <div className='col-12 col-md-4'>
-        <h4>Are you looking for staff?</h4>
+      <div className='col-12 col-md-3'>
+        <h4>Mental Health Support</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
-        <h6>Flexible, quality care staff to meet your needs. CVB staff are widely recognised as one of the best in the industry.</h6>
+        <h6 className='mt-4'>We provide caring, confidential mental health support to help individuals navigate life's challenges. </h6>
         <button>LEARN MORE</button>
       </div>
+      <div className='col-12 col-md-3'>
+        <h4>Care home and Support Staffing</h4>
+        <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
+        <h6>We provide qualified, compassionate staff to care homes and support services, ensuring quality care.</h6>
+        <button>LEARN MORE</button>
+      </div>
+      
      </section>
      </div>
 
@@ -142,7 +150,7 @@ const img =[
        <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/icon-6.png" alt="" />
         <h3>Our Clients</h3>
         <div className='line mt-3'></div>
-        <h4 className='mt-4'>"CVBhealthcare has been a lifesaver for my family. Their caregivers are kind, professional, and truly care about their ” – Sarah T.
+        <h4 className='mt-4'>"CarePoint has been a lifesaver for my family. Their caregivers are kind, professional, and truly care about their ” – Sarah T.
         <br />
         <br />
 "The medical staff is top-notch, and they always go above and beyond to provide the best care possible." – David R.</h4>

@@ -72,7 +72,9 @@ const HCA = () => {
             <div class="col text-start fs-5 d-none d-md-block">
             </div>
           </div>
-          <button type="button" class="btn text-white my-3 align-self-center mt-5 " style={{backgroundColor: '#40BACA', height: '70px', width: '200px'}}>Get Started</button>
+          <NavLink to={'/contact'} className='align-self-center'> 
+            <button type="button" class="btn text-white my-3  mt-5 " style={{backgroundColor: '#40BACA', height: '70px', width: '200px'}}>Get Started</button>
+          </NavLink>
         </div>
 
 

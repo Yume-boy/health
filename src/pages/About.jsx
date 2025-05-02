@@ -2,7 +2,7 @@ import React from 'react'
 import values from './values.jpeg'
 import woman from './womanOnAComputer.jpeg'
 import about from './aboutUs.jpeg'
-
+import { NavLink } from 'react-router-dom'
 const About = () => {
   return (
     <div>
@@ -104,7 +104,9 @@ const About = () => {
 
         <div className='d-flex align-items-center flex-column py-5' style={{backgroundColor: '#DCD9D0'}}>
           <h2 className='fs- fw-semibold'>Get started with us, today. </h2>
+          <NavLink to='/contact'>
           <button type="button" class="btn text-white my-3" style={{backgroundColor: '#40BACA', height: '80px', width: '150px'}}>Get Started</button>
+          </NavLink>
         </div>
     </div>
   )

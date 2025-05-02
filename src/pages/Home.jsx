@@ -5,6 +5,7 @@ import healthCare from './Healthcare.jpeg'
 import mentalSupport from './mental support.jpeg'
 import nurse from './nurse.jpeg'
 import Support from './support.jpeg'
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
 
@@ -33,7 +34,7 @@ const img =[
            <br />
           solutions offering 24/7 coverage
         </p>
-        <div className='learn'> Learn More</div>
+        <NavLink to="/services"><div className='learn'> Learn More</div></NavLink>
       </div>
      </div>
 
@@ -47,7 +48,7 @@ const img =[
             </div>
             <div class="col-12 col-md-6 text-start fs-4 ">
               <p className='fw-normal '>At CarePoint Healthcare Solutions, we are committed to delivering outstanding healthcare through compassion, clinical excellence, and innovation. Our patient-centered approach ensures high-quality care that is personalized to meet each individual's unique needs.</p>
-              <button type="button" class="btn p-3 my-5" style={{backgroundColor: '#40BACA', color:'#fff'}} >Get Started</button>
+              <NavLink to="/contact"><button type="button"  class="btn p-3 my-5" style={{backgroundColor: '#40BACA', color:'#fff'}} >Get Started</button></NavLink>
             </div>
           </div>
         </div>
@@ -86,7 +87,9 @@ const img =[
               </div>
             </div>
           </div>
+          <NavLink to={'/services'}>
           <button type="button" class="btn p-3 my-5" style={{backgroundColor: '#40BACA', color:'#fff', width: '200px'}} >Learn More</button>
+          </NavLink>
         </div>
      </section>
 
@@ -122,25 +125,33 @@ const img =[
         <h4>Home Care</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>We provide professional and personalized home care services to help your loved ones live comfortably and safely in their own homes.</h6>
-        <button>LEARN MORE</button>
+        <NavLink to={'/services'}>
+          <button>LEARN MORE</button>
+        </NavLink>
       </div>
       <div className='col-12 col-md-3'>
         <h4>Elderly & Disability Care</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>We offer compassionate, reliable care services that empower seniors and individuals with disabilities to live independently and with dignity. </h6>
-        <button>LEARN MORE</button>
+        <NavLink to={'/services'}>
+          <button>LEARN MORE</button>
+        </NavLink>
       </div>
       <div className='col-12 col-md-3'>
         <h4>Mental Health Support</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6 className='mt-4'>We provide caring, confidential mental health support to help individuals navigate life's challenges. </h6>
-        <button>LEARN MORE</button>
+        <NavLink to={'/services'}>
+          <button>LEARN MORE</button>
+        </NavLink>
       </div>
       <div className='col-12 col-md-3'>
         <h4>Care home and Support Staffing</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>We provide qualified, compassionate staff to care homes and support services, ensuring quality care.</h6>
-        <button>LEARN MORE</button>
+        <NavLink to={'/services'}>
+          <button>LEARN MORE</button>
+        </NavLink>
       </div>
       
      </section>
@@ -169,7 +180,9 @@ const img =[
 
         <div className='d-flex align-items-center flex-column py-5' style={{backgroundColor: '#495A58'}}>
           <h2 className='fs-1 fw-semibold mt-5 text-white'>Get started with us, today. </h2>
+          <NavLink to={'/contact'}>
           <button type="button" class="btn text-white my-5" style={{backgroundColor: '#40BACA', height: '80px', width: '150px'}}>Get Started</button>
+          </NavLink>
         </div>
     </div>
   )

@@ -3,6 +3,7 @@ import team1 from './team1.jpeg'
 import team2 from './team2.jpg'
 import team3 from './team3.jpg'
 import team from './team.avif'
+import { NavLink } from 'react-router-dom'
 
 const Training = () => {
   return (
@@ -69,7 +70,9 @@ const Training = () => {
 
         <div className='d-flex align-items-center flex-column py-5' style={{backgroundColor: '#495A58'}}>
           <h2 className='fs-1 fw-semibold mt-5 text-white'>Get started with us, today. </h2>
-          <button type="button" class="btn text-white my-5" style={{backgroundColor: '#40BACA', height: '80px', width: '150px'}}>Get Started</button>
+          <NavLink to='/contact'>
+            <button type="button" class="btn text-white my-5" style={{backgroundColor: '#40BACA', height: '80px', width: '150px'}}>Get Started</button>
+          </NavLink>
         </div>
     </div>
   )

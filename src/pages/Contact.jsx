@@ -12,7 +12,7 @@ const Contact = () => {
             <p className='fs-4'>Bristol, Saltford, Bath Road 474 B, Postcode BS31 3DJ, United Kingdom</p>
           </div>
           <div class="col-12 col-lg-6 ">
-            <form action="" className='text-start border p-3 rounded'>
+            <form action="" className='text-start d-flex flex-column border p-3 rounded'>
               <label htmlFor="" className=''>Name (Required)</label>
               <div className='row align-items-center my-3'>
                 <div className=' col d-flex flex-column'>
@@ -32,6 +32,7 @@ const Contact = () => {
                   <label htmlFor="">Message (Required)</label>
                   <input type="text" />
               </div>
+                <button type="button" class="btn text-white my-2 align-self-center" style={{backgroundColor: '#40BACA', height: '50px', width: '150px'}}>Submit</button>
             </form>
           </div>
         </div>

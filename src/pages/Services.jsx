@@ -48,8 +48,8 @@ const HCA = () => {
           <div class="row align-items-start">
             <div class="col d-flex flex-column text-center order-last">
              <PillBottle size={70} strokeWidth={1} className='align-self-center'/>
-              <h3 className='my-4 fs-2 fw-semibold'>Psychiatry</h3>
-              <p className='fs-5'>It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. <br /><br /> 45 mins |  $250 </p>
+              <h3 className='my-4 fs-2 fw-semibold'>Mental Health Support</h3>
+              <p className='fs-5'>You’re not alone — we’re here to listen and help.<br /><br /> 45 mins |  $250 </p>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>
@@ -57,8 +57,8 @@ const HCA = () => {
           <div class="row align-items-start">
             <div class="col d-flex flex-column text-center">
              <Target size={70} strokeWidth={1} className='align-self-center'/>
-              <h3 className='my-4 fs-2 fw-semibold'>Coaching</h3>
-              <p className='fs-5'>It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. <br /><br /> 50 mins |  $200  </p>
+              <h3 className='my-4 fs-2 fw-semibold'>Elderly & Disability Care</h3>
+              <p className='fs-5'>Your comfort, dignity, and independence matter to us.<br /><br /> 50 mins |  $200  </p>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>
@@ -66,8 +66,8 @@ const HCA = () => {
            <div class="row align-items-start">
             <div class="col d-flex flex-column text-center order-last">
              <Kanban size={70} strokeWidth={1} className='align-self-center'/>
-              <h3 className='my-4 fs-2 fw-semibold'>Acupuncture</h3>
-              <p className='fs-5'>It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. <br /><br /> 60 mins |  $250  </p>
+              <h3 className='my-4 fs-2 fw-semibold'>Care home and Support Staffing</h3>
+              <p className='fs-5'>Connecting care homes with trusted support professionals.<br /><br /> 60 mins |  $250  </p>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>

@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       { path: 'contact', element: <Contact /> },
       { path: 'services', element: <Services /> },
       { path: 'nurses', element: <Nurses /> },
-      { path: 'team', element: <Team /> },
+      // { path: 'team', element: <Team /> },
       { path: 'blog', element: <Blog /> },
       { path: 'blog/:id', element: <BlogDetails /> },
       { path: 'workWithUs', element: <WorkWithUs /> },

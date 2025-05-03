@@ -35,7 +35,7 @@ const Footer = () => {
       <ul class="foot flex-column">
         <li class="nav-item mb-2"><NavLink to="/about" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>About</span></NavLink></li>
         <li class="nav-item mb-2"><NavLink to="/services" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>Services</span></NavLink></li>
-        <li class="nav-item mb-2"><NavLink to="/team" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>Team</span></NavLink></li>
+        <li class="nav-item mb-2"><NavLink to="/blog" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>Blog</span></NavLink></li>
         <li class="nav-item mb-2"><NavLink to="/contact" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled me-2'/><span>Contact</span></NavLink></li>
         {/* <li class="nav-item mb-2"><NavLink to="#" class="nav-link p-0 text-body-secondary split"><CircleArrowRight className='iconFilled'/><span>Work with us</span></NavLink></li> */}
       </ul>

@@ -164,7 +164,7 @@ const img =[
         <h4 className='mt-4'>"CarePoint has been a lifesaver for my family. Their caregivers are kind, professional, and truly care about their ” – Sarah T.
         <br />
         <br />
-"The medical staff is top-notch, and they always go above and beyond to provide the best care possible." – David R.</h4>
+          "The medical staff is top-notch, and they always go above and beyond to provide the best care possible." – David R.</h4>
      </section>
 
      {/* <section className='no4'>

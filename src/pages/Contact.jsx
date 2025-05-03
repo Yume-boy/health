@@ -8,8 +8,8 @@ const Contact = () => {
           <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
             <h2 className='fs-1'>Contact Us</h2>
             <p className='fs-4'>HR@CarePointhealthSolutions.co.uk</p>
-            <p className='fs-4'>+44 07447 918 683</p>
-            <p className='fs-4'>Bristol, Saltford, Bath Road 474 B, Postcode BS31 3DJ, United Kingdom</p>
+            <p className='fs-4'>+44 7569 2642 428 </p>
+            <p className='fs-4'>105 Romney Avenue Lockleaze, Bristol England, BS7 9SU United Kingdom</p>
           </div>
           <div class="col-12 col-lg-6 ">
             <form action="" className='text-start d-flex flex-column border p-3 rounded'>

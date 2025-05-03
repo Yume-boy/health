@@ -163,6 +163,33 @@ h2,h3,h4,h5,h6 {
     
 }
 
+.child {
+    width: 100%;
+}
+
+.child img {
+    width: 70%;
+}
+
+.readMore:hover {
+    color: #fff;
+    background-color: #40BACA;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.readMore {
+    color: #40BACA;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #40BACA;
+    font-weight: 400 ;
+    transition: all .2s ease-in-out;
+}
+
+
+
 .form-field h3 {
     font-size: 45px;
 }

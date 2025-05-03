@@ -8,6 +8,8 @@ const Contact = lazy(() => import('./pages/Contact'))
 const Services = lazy(() => import('./pages/Services'))
 const Nurses = lazy(() => import('./pages/Nurses'))
 const Team = lazy(() => import('./pages/Team'))
+const Blog = lazy(() => import('./pages/Blog'))
+const BlogDetails = lazy(() => import('./pages/BlogDetails'))
 const WorkWithUs = lazy(() => import('./pages/WorkWithUs'))
 const AppLayout = lazy(() => import('./pages/AppLayout'))
 
@@ -23,6 +25,8 @@ const router = createBrowserRouter([
       { path: 'services', element: <Services /> },
       { path: 'nurses', element: <Nurses /> },
       { path: 'team', element: <Team /> },
+      { path: 'blog', element: <Blog /> },
+      { path: 'blog/:id', element: <BlogDetails /> },
       { path: 'workWithUs', element: <WorkWithUs /> },
     ],
   },

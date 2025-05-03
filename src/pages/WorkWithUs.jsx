@@ -1,5 +1,5 @@
 import React from 'react'
-import about from './workWithUS.jpg'
+import about from './workWithUs.jpg'
 import { NavLink } from 'react-router-dom'
 import {  UserRoundCheck, ShoppingBag, Stethoscope,Check  } from 'lucide-react'
 

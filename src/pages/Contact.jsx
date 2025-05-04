@@ -7,7 +7,7 @@ const Contact = () => {
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
             <h2 className='fs-1'>Contact Us</h2>
-            <p className='fs-4'>HR@CarePointhealthSolutions.co.uk</p>
+            <p className='fs-4'>HR@carepointhealthcaresolutions.co.uk</p>
             <p className='fs-4'>+44 7569 2642 428 </p>
             <p className='fs-4'>105 Romney Avenue Lockleaze, Bristol England, BS7 9SU United Kingdom</p>
           </div>

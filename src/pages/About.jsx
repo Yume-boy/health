@@ -52,54 +52,39 @@ const About = () => {
           </div>
         </div>
         
-        <div className='container my-5 py-5'>
-          <h2 className='text-center fs-2 fw-semibold mb-4'>Our Rates</h2>
-          <div class="row  align-items-start my-3">
-            <div class="col order-last">
-              <p className='fs-5'>Online or In-Person Sessions
-                A dedicated space for individuals to explore and process their thoughts, whether virtually or face-to-face. Sessions are typically held weekly or bi-weekly.
-                <br />
-                <br />
-                60 minutes | $300 | Get Started</p>
+        <div className='container my-5'>
+            <div class=" d-flex flex-column align-items-center">
+              <h3 className='display-5'>Our Mission</h3>
+              <div className='line mt-3'></div>
+              <div className='w-75'>
+                <h4 className='my-4'>CarePoint Health Solutions LTD provides tailored healthcare services for vulnerable populations while fostering an inclusive work environment. We offer in-person and online emotional support to those most in need, ensuring accessibility through face-to-face and digital platforms. Our mission includes strengthening caregiver-client relationships through professional training and best practices in healthcare and emotional support.</h4>
+              </div>
             </div>
-            <div class="col-12 col-md-6 text-start fs-5 ">
-              <h3 className='text-start fw-semibold fs-2 '>Talk therapy</h3>
+        </div>
+         <div className='container my-5'>
+            <div class=" d-flex flex-column align-items-center">
+              <h3 className='display-5'>Our Vision</h3>
+              <div className='line mt-3'></div>
+              <div className='w-75'>
+                <h4 className='my-4'>Our goal is to provide exceptional healthcare support services for vulnerable populations (children, adults, elderly) across Bristol and Somerset while empowering young people and individuals from underrepresented backgrounds through inclusive career opportunities and  Emotional Support: Offering emotional guidance to individuals within healthcare settings, helping them build self-esteem and positive relationships through both in-person interactions and virtual support systems.</h4>
+              </div>
             </div>
-          </div>
-          <div class="row  align-items-start my-3">
-            <div class="col order-last">
-              <p className='fs-5'>This time is dedicated to assessing your physical and mental health in order to provide appropriate medication to help manage mental health symptoms. Please note: this session does not include talk therapy.
-                <br />
-                <br />
-                45 minutes | $250 | Get Started</p>
+        </div>
+         <div className='container my-5'>
+            <div class=" d-flex flex-column align-items-center">
+              <h3 className='display-5'>   Why Our Approach Stands Out</h3>
+              <div className='line mt-3'></div>
+              <div className='w-75'>
+                <ul className='fs-5 lh-lg'>
+                  <li><span className='fw-semibold'>Comprehensive Support Across All Ages: </span>Specialized healthcare and emotional support services for children, adults, and the elderly in person and online.</li>
+                  <li><span className='fw-semibold'>Targeting Young People and the Global Majority: </span>Focus on career development for young individuals, especially from underrepresented backgrounds.</li>
+                  <li><span className='fw-semibold'>Diverse Workforce:</span> Creating an inclusive environment where employees from all races, genders, and backgrounds can thrive.</li>
+                  <li><span className='fw-semibold'>Community Impact: </span>Addressing healthcare needs while also promoting economic and social development in local communities.</li>
+                  <li><span className='fw-semibold'>Mental Health Support Promoting Relationships Between Generations:</span> Strengthening relationships between healthcare recipients and their caregivers through caregiving guidance and training.</li>
+                  <li>⁠Discover our blog, your go-to resource for both physical and emotional support to uplift your mood and tackle anxiety. Remember, you’re not alone in this journey—let’s support each other together!</li>
+                </ul>
+              </div>
             </div>
-            <div class="col-12 col-md-6 text-start fs-5 ">
-              <h3 className='text-start fw-semibold fs-2'>Psychiatric session</h3>
-            </div>
-          </div>
-          <div class="row  align-items-start my-3">
-            <div class="col order-last">
-              <p className='fs-5'>Online or In-Person Sessions
-                This session is designed to focus on what matters most to you, helping you create a personalized plan to achieve both your personal and professional goals.
-                <br />
-                <br />
-                50 minutes | $200 | Get Started</p>
-            </div>
-            <div class="col-12 col-md-6 text-start fs-5 ">
-              <h3 className=' fw-semibold fs-2'>Coaching session</h3>
-            </div>
-          </div>
-          <div class="row  align-items-start my-3">
-            <div class="col order-last">
-              <p className='fs-5'>In-Person Only This session is designed to alleviate pain and treat a variety of physical, mental, and emotional conditions.
-                <br />
-                <br />
-                60 minutes | $250 | Get Started</p>
-            </div>
-            <div class="col-12 col-md-6 text-start fs-5 ">
-              <h3 className=' fw-semibold fs-2'>Acupuncture session</h3>
-            </div>
-          </div>
         </div>
 
         <div className='d-flex align-items-center flex-column py-5' style={{backgroundColor: '#DCD9D0'}}>

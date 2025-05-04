@@ -39,7 +39,7 @@ const HCA = () => {
           <div class="row align-items-start">
             <div class="col d-flex flex-column text-center">
              <RockingChair size={70} strokeWidth={1} className='align-self-center'/>
-              <h3 className='my-4 fs-2 fw-semibold'>Home Care Services</h3>
+              <h3 className='my-4 fs-2 fw-semibold'>Personal Health Assistance</h3>
               <p className='fs-4'>Personalized in-home nursing and caregiver support.</p>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
@@ -78,18 +78,18 @@ const HCA = () => {
         </div>
 
 
-        <div className='py-5' style={{backgroundColor: '#DCD9D0', }}>
-        <div className='container mt-5 py-5'>
-          <div class=" align-items-start position-relative " style={{backgroundColor: '#DCD9D0', height: '500px'}}>
-            <div class="col order-last rounded position-absolute  w-50 d-flex flex-column p-3 justify-content-center" style={{backgroundColor: '#fff', height: '90%', left: '50%', top: ' 5%'}}>
-              <p className='fs-2'>“I underestimated how hard it would be adjusting to working from home, but with Dr. Schell’s help, I was able to regain focus.”</p>
-              <p>— OLIVIA R., CLOVE CLIENT</p>
-            </div>
-            <div class="col text-start fs-5 h-full w-75 " style={{height: '100%'}}>
-              <img src={profile} alt="" width={'100%'} height='100%' className='rounded'/>
-            </div>
+        <div style={{backgroundColor: '#DCD9D0', }}>
+          <div className='container d-flex align-items-center flex-column top py-5 mt-5 rounded' style={{backgroundColor: '#DCD9D0', }}>
+              <h3 className='my-4 fs-2 fw-semibold'>Services Offered</h3>
+                <ul className='fs-5 lh-lg'>
+                  <li><span className='fw-semibold'>Personal Health Assistance – </span>Assistance with hygiene, mobility, and physical well-being.</li>
+                  <li><span className='fw-semibold'>Medication Management – </span>Assisting with medication reminders and administration.</li>
+                  <li><span className='fw-semibold'>Emotional & Mental Health Support – </span>Providing both in-person and online emotional well-being support to reduce isolation and improve mental health. </li>
+                  <li><span className='fw-semibold'>Nutrition & Dietary Support – </span>Ensuring balanced diets for individuals in care.</li>
+                  <li><span className='fw-semibold'>Healthcare Facility Assistance – </span>Providing non-medical support to individuals in hospitals, clinics, or care facilities.</li>
+                  <li><span className='fw-semibold'>Mobility & Transportation Support – </span>Escorting clients to healthcare appointments.</li>
+                </ul>
           </div>
-        </div>
         </div>
 
         <div style={{backgroundColor: '#495A58'}} className='py-5'>

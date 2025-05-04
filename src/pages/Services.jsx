@@ -49,7 +49,7 @@ const HCA = () => {
             <div class="col d-flex flex-column text-center order-last">
              <PillBottle size={70} strokeWidth={1} className='align-self-center'/>
               <h3 className='my-4 fs-2 fw-semibold'>Mental Health Support</h3>
-              <p className='fs-5'>You’re not alone — we’re here to listen and help.<br /><br /> 45 mins |  $250 </p>
+              <p className='fs-5'>You’re not alone — we’re here to listen and help. </p>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>
@@ -58,7 +58,7 @@ const HCA = () => {
             <div class="col d-flex flex-column text-center">
              <Target size={70} strokeWidth={1} className='align-self-center'/>
               <h3 className='my-4 fs-2 fw-semibold'>Elderly & Disability Care</h3>
-              <p className='fs-5'>Your comfort, dignity, and independence matter to us.<br /><br /> 50 mins |  $200  </p>
+              <p className='fs-5'>Your comfort, dignity, and independence matter to us. </p>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>
@@ -67,7 +67,7 @@ const HCA = () => {
             <div class="col d-flex flex-column text-center order-last">
              <Kanban size={70} strokeWidth={1} className='align-self-center'/>
               <h3 className='my-4 fs-2 fw-semibold'>Care home and Support Staffing</h3>
-              <p className='fs-5'>Connecting care homes with trusted support professionals.<br /><br /> 60 mins |  $250  </p>
+              <p className='fs-5'>Connecting care homes with trusted support professionals. </p>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>

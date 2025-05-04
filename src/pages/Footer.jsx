@@ -24,7 +24,7 @@ const Footer = () => {
       <div className='short-line mt-3 mb-5'></div>
       <ul class="foot flex-column">
         <li class="nav-item  mb-2"><NavLink to="#" class="nav-link split p-0 text-body-secondary"><MapPin className='icon'/>105 Romney Avenue Lockleaze, Bristol England, BS7 9SU United Kingdom</NavLink></li>
-        <li class="nav-item mb-2"><a href="tel:+4407447918683" class="nav-link p-0 text-body-secondary split"><Phone className='icon'/> +44 7569 2642 428</a></li>
+        <li class="nav-item mb-2"><a href="tel:+4475692642428" class="nav-link p-0 text-body-secondary split"><Phone className='icon'/> +44 7569 2642 428</a></li>
         <li class="nav-item mb-2"><a href="mailto:Contact@CarePointhealthSolutions.co.uk" class="nav-link p-0 text-body-secondary split"><Mail className='icon'/> Contact@CarePointhealthSolutions.co.uk</a></li>
       </ul>
     </div>

@@ -43,6 +43,11 @@ h2,h3,h4,h5,h6 {
     gap: 30px;
 }
 
+.segoe {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+
 .hero {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.mua.edu/uploads/sites/10/2023/02/istock-482499394.webp') ;
     background-size: cover;  /* Makes sure the image covers the whole page */
@@ -215,6 +220,11 @@ h2,h3,h4,h5,h6 {
     height: 50px;
     padding: 5px;
 }
+
+.width-75 {
+    width: 75%;
+}
+
 
 .form-field form span {
     display: grid;
@@ -406,6 +416,11 @@ h2,h3,h4,h5,h6 {
    .no2 h3 {
         font-size: 30px;
         text-align: center;
+    }
+
+
+    .width-75 {
+        width: 100%;
     }
 
     .info {

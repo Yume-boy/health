@@ -2,6 +2,7 @@ import React from 'react'
 import about from './training.jpg'
 import { NavLink } from 'react-router-dom'
 import { Check } from 'lucide-react'
+import dev from './dev.png'
 
 const Nurses = () => {
   return (
@@ -28,7 +29,7 @@ const Nurses = () => {
 
         <div className='py-5' style={{backgroundColor: '#F7F7F7'}}>
             <div class="container  d-flex flex-column align-items-center my-3">
-              <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/icon-5.png" alt="" />
+              <img src={dev} alt="" height={'100px'} style={{borderRadius:'50%'}}/>
               <h3 className='display-5'>Training and Development</h3>
               <div className='line mt-3'></div>
               <div className='w-75'>

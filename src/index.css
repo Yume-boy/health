@@ -13,11 +13,11 @@ h2,h3,h4,h5,h6 {
     justify-content: space-between;
     padding: 15px 50px;
     align-items: center; */
-    background-color: #5e5d5daf;
+    background-color: #c5c5c5af;
     /* width: 100%; */
 }
  .bg {
-    background-color: #5e5d5daf;
+    background-color: #c4bbbbaf;
  }
 
 /* .nav ul  {
@@ -29,6 +29,14 @@ h2,h3,h4,h5,h6 {
 .link  {
     color: #fff;
     text-decoration: none;
+}
+
+.link:hover {
+    color: #40BACA;
+}
+
+.link:active {
+    color: #40BACA;
 }
 
 .space {

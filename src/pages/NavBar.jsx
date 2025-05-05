@@ -26,32 +26,56 @@ const NavBar = () => {
             {/* Center the links */}
             <ul className="navbar-nav mx-auto mb-2 mb-md-0 gap-4 ">
               <li className="nav-item fw-normal">
-                <NavLink className="link nav-link" to="/about">
+                <NavLink 
+                  style={({ isActive }) => ({
+                    color: isActive ? '#40BACA' : 'white',
+                  })}
+                className="link nav-link" to="/about">
                   About
                 </NavLink>
               </li>
               <li className="nav-item fw-normal">
-                <NavLink className="link nav-link" to="/services">
+                <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? '#40BACA' : 'white',
+                })}
+                className="link nav-link" to="/services">
                   Service
                 </NavLink>
               </li>
               <li className="nav-item fw-normal">
-                <NavLink className="link nav-link" to="/blog">
+                <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? '#40BACA' : 'white',
+                })}
+                className="link nav-link" to="/blog">
                   Blog
                 </NavLink>
               </li>
               <li className="nav-item fw-normal">
-                <NavLink className="link nav-link" to="/workWithUs">
+                <NavLink 
+                style={({ isActive }) => ({
+                  color: isActive ? '#40BACA' : 'white',
+                })}
+                className="link nav-link" to="/workWithUs">
                   Work With Us
                 </NavLink>
               </li>
               <li className="nav-item fw-normal">
-                <NavLink className="link nav-link" to="/training">
+                <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? '#40BACA' : 'white',
+                })}
+                 className="link nav-link" to="/training">
                   Training
                 </NavLink>
               </li>
               <li className="nav-item fw-normal">
-                <NavLink className="link nav-link" to="/contact">
+                <NavLink className="link nav-link"
+                style={({ isActive }) => ({
+                  color: isActive ? '#40BACA' : 'white',
+                })}
+                to="/contact">
                   Contact
                 </NavLink>
               </li>
@@ -70,7 +94,7 @@ const NavBar = () => {
                 <button
                   type="button"
                   className="btn text-white my-2 my-md-0 w-100 w-md-auto"
-                  style={{ backgroundColor: '#40BACA', whiteSpace: 'nowrap', minWidth: '120px' }}
+                  style={{ backgroundColor: '#40BACA', whiteSpace: 'nowrap', minWidth: '120px',}}
                 >
                   Get Started
                 </button>

@@ -42,7 +42,7 @@ const img =[
      <section className='no2'>
 
         <div class="text-center m-4 px-3 py-5 rounded"style={{backgroundColor: '#e7e7e7', color: '#3F4A49'}}  >
-          <div class="row align-items-start">
+          <div class="row align-items-start py-5">
             <div class="col-12 col-md-6 mb-3 ">
               <h2 className='fs-1 fw-semibold' >Our approach</h2>
             </div>

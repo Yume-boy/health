@@ -107,7 +107,7 @@ const Nurses = () => {
         <div className='d-flex align-items-center flex-column py-5' style={{backgroundColor: '#F7F7F7'}}>
           <div className='w-75 d-flex align-items-center flex-column'>
           <h2 className='fs-1 mt-5 text-center lh-lg'>If this resonates with who you are and what you seek in a career, then exploring a recruitment path with CarePoint could be your ideal opportunity. </h2>
-          <h3>For further information, please do not hesitate to contact us today.</h3>
+          <h3 className='mt-5'>For further information, please do not hesitate to contact us today.</h3>
           <NavLink to='/contact' className={'my-5'}>
           <button type="button" class="btn text-white my-3" style={{backgroundColor: '#40BACA', height: '80px', width: '150px'}}>CONTACT US</button>
           </NavLink>

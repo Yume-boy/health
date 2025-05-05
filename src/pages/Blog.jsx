@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 import blogPosts from './blogdata'
 
 // Import icons from lucide-react
-import { Facebook, Youtube } from 'lucide-react'
+import { Facebook, Youtube, Linkedin } from 'lucide-react'
 
 const Blog = () => {
   return (
@@ -48,6 +48,13 @@ const Blog = () => {
             rel="noopener noreferrer"
           >
             <Youtube size={32} color={'#fff'} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/carepointhealthcaresolutions/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin size={32} color={'#fff'} />
           </a>
         </div>
       </div>

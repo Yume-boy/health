@@ -125,7 +125,7 @@ const img =[
         <h4>Home Care</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>We provide professional and personalized home care services to help your loved ones live comfortably and safely in their own homes.</h6>
-        <NavLink to={'/services'}>
+        <NavLink to={'/workWithUs'}>
           <button>LEARN MORE</button>
         </NavLink>
       </div>
@@ -133,7 +133,7 @@ const img =[
         <h4>Elderly & Disability Care</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>We offer compassionate, reliable care services that empower seniors and individuals with disabilities to live independently and with dignity. </h6>
-        <NavLink to={'/services'}>
+        <NavLink to={'/workWithUs'}>
           <button>LEARN MORE</button>
         </NavLink>
       </div>
@@ -141,7 +141,7 @@ const img =[
         <h4>Mental Health Support</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6 className='mt-4'>We provide caring, confidential mental health support to help individuals navigate life's challenges. </h6>
-        <NavLink to={'/services'}>
+        <NavLink to={'/workWithUs'}>
           <button>LEARN MORE</button>
         </NavLink>
       </div>
@@ -149,7 +149,7 @@ const img =[
         <h4>Care home and Support Staffing</h4>
         <img src="https://cvbhealthcare.co.uk///wp-content/uploads/2015/12/wave-divider.png" alt="" />
         <h6>We provide qualified, compassionate staff to care homes and support services, ensuring quality care.</h6>
-        <NavLink to={'/services'}>
+        <NavLink to={'/workWithUs'}>
           <button>LEARN MORE</button>
         </NavLink>
       </div>

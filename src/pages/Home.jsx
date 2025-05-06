@@ -48,7 +48,7 @@ const img =[
             </div>
             <div class="col-12 col-md-6 text-start fs-4 ">
               <p className='fw-normal '>At CarePointHealthcareSolutions, we are committed to delivering outstanding healthcare through compassion, clinical excellence, and innovation. Our patient-centered approach ensures high-quality care that is personalized to meet each individual's unique needs.</p>
-              <NavLink to="/contact"><button type="button"  class="btn p-3 my-5" style={{backgroundColor: '#40BACA', color:'#fff'}} >Get Started</button></NavLink>
+              <NavLink to="/contact"><button type="button"  class="btn p-3 mt-5" style={{backgroundColor: '#40BACA', color:'#fff'}} >Get Started</button></NavLink>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ const img =[
             </div>
             <div class="col text-start fs-4 ">
             <iframe
-              src="https://www.google.com/maps?q=105+Romney+Avenue+Lockleaze+Bristol+England+BS7+9SU+United+Kingdom&output=embed" 
+              src="https://www.google.com/maps?q=Bristol+England+BS7+9SU+United+Kingdom&output=embed" 
               width="100%"
               height="450"
               allowfullscreen=""

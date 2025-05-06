@@ -39,7 +39,7 @@ const Contact = () => {
             <h2 className='fs-1'>Contact Us</h2>
             <p className='fs-4'>hr@carepointhealthcaresolutions.co.uk</p>
             <p className='fs-4'>+44 7569 2642 428 </p>
-            <p className='fs-4'>105 Romney Avenue Lockleaze, Bristol England, BS7 9SU United Kingdom</p>
+            <p className='fs-4'>Bristol England, BS7 9SU United Kingdom</p>
           </div>
 
           <div className="col-12 col-lg-6 ">

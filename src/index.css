@@ -225,6 +225,30 @@ h2,h3,h4,h5,h6 {
     width: 75%;
 }
 
+/* Hide Google Translate top banner */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  } 
+  body {
+    top: 0px !important; 
+  }
+  
+  /* Hide Google Translate powered logo */
+  .goog-logo-link {
+    display: none !important;
+  }
+  .goog-te-gadget {
+    font-size: 0 !important;
+  }
+  
+  /* Make the dropdown look normal */
+  .goog-te-combo {
+    font-size: 16px !important;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+
 
 .form-field form span {
     display: grid;

@@ -4,27 +4,6 @@ import logo from './logo.jpg'
 
 const NavBar = () => {
 
-  useEffect(() => {
-    // Load Google Translate script
-    const script = document.createElement("script");
-    script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Define init function globally
-    window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        { pageLanguage: "en" },
-        "google_translate_element"
-      );
-    };
-
-    return () => {
-      // Cleanup script when component unmounts
-      document.body.removeChild(script);
-    };
-  }, []);
-
 
   return (
     <div className="sticky-top">
@@ -46,7 +25,6 @@ const NavBar = () => {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarsExample04">
-          <div id="google_translate_element py-5"></div>
             {/* Center the links */}
             <ul className="navbar-nav mx-auto mb-2 mb-md-0 gap-4 ">
               <li className="nav-item fw-normal">

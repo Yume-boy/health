@@ -149,6 +149,65 @@ h2,h3,h4,h5,h6 {
 }
 
 
+/* Add this to your CSS file or a style tag */
+
+/* Desktop Dropdown Styles */
+/* Desktop Dropdown Styles */
+.dropdown-menu-desktop {
+    /* Keep existing styles like position, etc. */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-width: 150px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+
+    /* ANIMATION STYLES */
+    max-height: 0; /* Starts with no height */
+    overflow: hidden; /* Hides content */
+    opacity: 0; /* Fade effect */
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.lampa:hover .dropdown-menu-desktop {
+    max-height: 200px; /* Adjust this value to fit your content */
+    opacity: 1;
+}
+
+.dropdown-menu-desktop a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+  white-space: nowrap;
+  transition: all .3s ease-in-out;
+}
+
+.dropdown-menu-desktop a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mobile Dropdown Styles */
+.dropdown-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* ANIMATION STYLES */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.dropdown-mobile.show-dropdown {
+    max-height: 500px; /* Adjust this value */
+}
+
 
 
 

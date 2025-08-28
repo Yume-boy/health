@@ -2,22 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from './logo.png';
 
-
 const NavBar2 = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 100);
     };
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -27,11 +22,27 @@ const NavBar2 = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleMouseEnter = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(false);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+    const toggleMobileDropdown = (e) => {
+    e.preventDefault(); // Prevent NavLink from navigating immediately
+    setIsMobileDropdownOpen(!isMobileDropdownOpen);
+  };
+
   return (
     <div className={`sticky-top nav1 ${isScrolled ? 'scrolled-bg' : ''}`}>
       <div>
         <header className="d-flex flex-wrap justify-content-between align-items-center ps-3 pe-3 pe-lg-0">
-          {/* Logo */}
           <Link
             className="navbar-brand d-flex align-items-center mb-0 me-auto text-decoration-none"
             to="/"
@@ -45,22 +56,13 @@ const NavBar2 = () => {
             />
           </Link>
 
-          {/* Desktop Nav */}
           <div className="d-none d-lg-flex flex-column align-items-center">
             <div className={`d-flex clip flex-column flex-md-row align-items-center ms-md-3 px-5 pb-2 ${isScrolled ? 'clip-up' : ''}`}>
-              <button
-                type="button"
-                className="btn my-2 rounded-pill my-md-0 ms-2 w-100 w-md-auto"
-                style={{ borderColor: '#40BACA', color: '#40BACA', whiteSpace: 'nowrap', minWidth: '100px' }}
-              >
+              <button type="button" className="btn my-2 rounded-pill my-md-0 ms-2 w-100 w-md-auto" style={{ borderColor: '#40BACA', color: '#40BACA', whiteSpace: 'nowrap', minWidth: '100px' }}>
                 Login
               </button>
               <NavLink to="/contact" className="w-100 w-md-auto ms-md-2">
-                <button
-                  type="button"
-                  className="btn rounded-pill text-white my-2 my-md-0 w-100 w-md-auto"
-                  style={{ backgroundColor: '#40BACA', whiteSpace: 'nowrap', minWidth: '120px' }}
-                >
+                <button type="button" className="btn rounded-pill text-white my-2 my-md-0 w-100 w-md-auto" style={{ backgroundColor: '#40BACA', whiteSpace: 'nowrap', minWidth: '120px' }}>
                   Get Started
                 </button>
               </NavLink>
@@ -68,27 +70,48 @@ const NavBar2 = () => {
                 19 Paragon Rd, BA1 5LX Bath.
               </p>
             </div>
-
             <ul className="nav d-flex justify-content-center py-2">
-              {["about", "services", "blog", "workWithUs", "training", "contact"].map((item, idx) => (
+              {["about", "blog", "workWithUs", "training", "contact"].map((item, idx) => (
                 <li className="nav-item fw-normal" key={idx}>
-                  <NavLink
-                    style={({ isActive }) => ({ color: isActive ? '#40BACA' : 'black' })}
-                    className="link nav-link"
-                    to={`/${item}`}
-                  >
+                  <NavLink style={({ isActive }) => ({ color: isActive ? '#40BACA' : 'black' })} className="link nav-link" to={`/${item}`}>
                     {item.charAt(0).toUpperCase() + item.slice(1).replace(/([A-Z])/g, ' $1')}
                   </NavLink>
                 </li>
               ))}
+
+              {/* Services dropdown for desktop */}
+              <li 
+                className="nav-item lampa fw-normal"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <NavLink
+                  style={({ isActive }) => ({ color: isActive ? '#40BACA' : 'black' })}
+                  className="link nav-link position-relative"
+                  to="/services"
+                >
+                  Services ⮟
+                {/* {isDropdownOpen && (
+                  <div className="dropdown-menu-desktop p">
+                    <Link to="/services" onClick={() => setIsDropdownOpen(false)}>
+                      Service One
+                    </Link>
+                    <Link to="/services" onClick={() => setIsDropdownOpen(false)}>
+                      Service Two
+                    </Link>
+                  </div>
+                )} */}
+                <div className="dropdown-menu-desktop position-absolute rounded">
+                  <Link to="/services">Personal Health Assistance</Link>
+                  <Link to="/services">Mental Health Support</Link>
+                  <Link to="/services">Elderly & Disability Care</Link>
+                  <Link to="/services">Care home and Support Staffing</Link>
+                </div>
+                </NavLink>
+              </li>
             </ul>
           </div>
-
-          {/* Burger Icon (visible only on tablets/mobiles) */}
-          <button
-            className={`burger d-lg-none ${isMenuOpen ? 'open' : ''}`}
-            onClick={toggleMenu}
-          >
+          <button className={`burger d-lg-none ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <span></span>
             <span></span>
             <span></span>
@@ -97,34 +120,42 @@ const NavBar2 = () => {
 
         {/* Mobile Sidebar */}
         <div className={`mobile-menu d-lg-none ${isMenuOpen ? 'show' : ''}`}>
-          <ul className="nav flex-column text-center">
-            {["about", "services", "blog", "workWithUs", "training", "contact"].map((item, idx) => (
+          <ul className="nav flex-column ">
+            {["about", "blog", "workWithUs", "training", "contact"].map((item, idx) => (
               <li className="nav-item fw-normal my-2" key={idx}>
-                <NavLink
-                  onClick={() => setIsMenuOpen(false)}
-                  style={({ isActive }) => ({ color: isActive ? '#40BACA' : 'black' })}
-                  className="link nav-link"
-                  to={`/${item}`}
-                >
+                <NavLink onClick={() => setIsMenuOpen(false)} style={({ isActive }) => ({ color: isActive ? '#40BACA' : 'black' })} className="link nav-link" to={`/${item}`}>
                   {item.charAt(0).toUpperCase() + item.slice(1).replace(/([A-Z])/g, ' $1')}
                 </NavLink>
               </li>
             ))}
+            <li className="nav-item fw-normal my-2 mobile-dropdown-container">
+              <div onClick={toggleMobileDropdown} style={{ cursor: 'pointer' }}>
+                <NavLink style={({ isActive }) => ({ color: isActive ? '#40BACA' : 'black' })} className="link nav-link" to="/services">
+                  Services ⮟
+                </NavLink>
+              </div>
+              <div className={`dropdown-mobile text-left ${isMobileDropdownOpen ? 'show-dropdown' : ''}`}>
+                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services">
+                  Personal Health Assistance
+                </NavLink>
+                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services">
+                  Mental Health Support
+                </NavLink>
+                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services">
+                  Elderly & Disability Care
+                </NavLink>
+                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services">
+                  Care home and Support Staffing
+                </NavLink>
+              </div>
+            </li>
           </ul>
           <div className="mt-3">
-            <button
-              type="button"
-              className="btn my-2 rounded-pill w-75"
-              style={{ borderColor: '#40BACA', color: '#40BACA' }}
-            >
+            <button type="button" className="btn my-2 rounded-pill w-75" style={{ borderColor: '#40BACA', color: '#40BACA' }}>
               Login
             </button>
             <NavLink to="/contact" className="w-100">
-              <button
-                type="button"
-                className="btn rounded-pill text-white my-2 w-75"
-                style={{ backgroundColor: '#40BACA' }}
-              >
+              <button type="button" className="btn rounded-pill text-white my-2 w-75" style={{ backgroundColor: '#40BACA' }}>
                 Get Started
               </button>
             </NavLink>

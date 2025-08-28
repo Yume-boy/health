@@ -52,10 +52,10 @@ h2,h3,h4,h5,h6 {
 
 /* Styling for the 'clip' div */
 .clip {
-  /* Set a fixed height for the un-scrolled state */
-  height: 90px; /* Adjust this value to match the actual height of your div */
-  overflow: hidden; /* This is crucial to hide contents during height transition */
-  transition: transform 0.4s ease, opacity 0.4s ease, height 0.4s ease, padding 0.4s ease;
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease, margin 0.5s ease, padding 0.5s ease;
+  will-change: transform, opacity; /* smooth GPU-accelerated animations */
 }
 
 /* New class to make the 'clip' div transition up and collapse space */
@@ -79,6 +79,75 @@ h2,h3,h4,h5,h6 {
   width: 70px;
   height: 70px;
 }
+
+/* Burger icon */
+.burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  padding: 0;
+  z-index: 1051;
+  transition: transform 0.4s ease;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #40BACA;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animate burger to X */
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Sidebar menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 75%;
+  max-width: 320px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: right 0.4s ease;
+  z-index: 1050;
+}
+
+.mobile-menu.show {
+  right: 0;
+}
+
+/* Smooth transitions */
+.nav1 {
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.fusion-standard-logo {
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
 
 
 

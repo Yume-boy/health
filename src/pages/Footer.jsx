@@ -1,6 +1,6 @@
 import React from 'react'
 import { MapPin, Phone, Mail, CircleArrowRight, } from 'lucide-react';
-import logo from './logo.jpg'
+import logo from './logo.png'
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -23,8 +23,8 @@ const Footer = () => {
       <h5>CONTACT INFORMATION</h5>
       <div className='short-line mt-3 mb-5'></div>
       <ul class="foot flex-column">
-        <li class="nav-item  mb-2"><NavLink to="#" class="nav-link split p-0 text-body-secondary "><MapPin className='icon'/>Bristol England, BS7 9SU United Kingdom</NavLink></li>
-        <li class="nav-item mb-2"><a href="tel:+4475692642428" class="nav-link p-0 text-body-secondary split"><Phone className='icon'/> +44 7569 2642 428</a></li>
+        <li class="nav-item  mb-2"><NavLink to="#" class="nav-link split p-0 text-body-secondary "><MapPin className='icon'/>19 Paragon Rd, BA1 5LX Bath.</NavLink></li>
+        <li class="nav-item mb-2"><a href="tel:+4475692642428" class="nav-link p-0 text-body-secondary split"><Phone className='icon'/> +447512499615</a></li>
         <li class="nav-item mb-2"><a href="mailto:contact@carepointhealthcaresolutions.co.uk" class="nav-link p-0 text-body-secondary split text-break"><Mail className='icon'/> contact@carepointhealthcaresolutions.co.uk</a></li>
       </ul>
     </div>

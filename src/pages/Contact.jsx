@@ -61,6 +61,11 @@ const Contact = () => {
                 <label>Email (Required)</label>
                 <input type="email" className='px-2'  name="email" required />
               </div>
+              
+              <div className='d-flex flex-column my-3'>
+                <label>Phone Number (Required)</label>
+                <input type="text" className='px-2'  name="phone_no  " required />
+              </div>
 
               <div className='d-flex flex-column my-3'>
                 <label>Message (Required)</label>

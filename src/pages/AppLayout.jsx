@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import { Outlet, useLocation } from 'react-router-dom'
+import NavBar2 from './NavBar2'
 
 const AppLayout = () => {
 
@@ -14,7 +15,8 @@ const AppLayout = () => {
 
   return (
     <div>
-      <NavBar />
+      <NavBar2 />
+      {/* <NavBar /> */}
       <Outlet/>
       <Footer/>
 

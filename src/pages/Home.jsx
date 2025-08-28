@@ -105,7 +105,7 @@ const img =[
             </div>
             <div class="col text-start fs-4 ">
             <iframe
-              src="https://www.google.com/maps?q=Bristol+England+BS7+9SU+United+Kingdom&output=embed" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.890312325336!2d-2.358572123519633!3d51.38479297178745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718109d3df65f5%3A0x65e5c3e84635cf9e!2s19%20Paragon%20Rd%2C%20Bath%20BA1%205LX%2C%20UK!5e0!3m2!1sen!2suk!4v1735376400000!5m2!1sen!2suk"
               width="100%"
               height="450"
               allowfullscreen=""

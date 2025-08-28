@@ -8,16 +8,23 @@ h2,h3,h4,h5,h6 {
     font-weight: 300;
 }
 
-.nav {
+.nav1 {
     /* display: flex;
     justify-content: space-between;
     padding: 15px 50px;
     align-items: center; */
-    background-color: #c5c5c5af;
+    background-color: #e6e6e6;
     /* width: 100%; */
 }
  .bg {
     background-color: #c4bbbbaf;
+ }
+
+ .clip {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    border-bottom: 2px solid #3BAFBF;
+    background-color: white;
+    
  }
 
 /* .nav ul  {
@@ -25,6 +32,59 @@ h2,h3,h4,h5,h6 {
     list-style: none;
     gap: 20px;
 } */
+
+
+
+
+
+/* NavBar2.css */
+
+/* Base navbar styling with transition */
+.nav1 {
+  transition: background-color 0.4s ease;
+}
+
+/* New class for the scrolled state */
+.scrolled-bg {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the 'clip' div */
+.clip {
+  /* Set a fixed height for the un-scrolled state */
+  height: 90px; /* Adjust this value to match the actual height of your div */
+  overflow: hidden; /* This is crucial to hide contents during height transition */
+  transition: transform 0.4s ease, opacity 0.4s ease, height 0.4s ease, padding 0.4s ease;
+}
+
+/* New class to make the 'clip' div transition up and collapse space */
+.clip-up {
+  transform: translateY(-100%);
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Base logo styling */
+.fusion-standard-logo {
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+/* New class to make the logo shrink */
+.logo-shrink {
+  width: 70px;
+  height: 70px;
+}
+
+
+
+
+
+
 
 .link  {
     color: #fff;

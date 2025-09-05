@@ -8,15 +8,6 @@ const NavBar2 = () => {
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 100);
-  //   };
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
 
 
   useEffect(() => {
@@ -115,27 +106,22 @@ const NavBar2 = () => {
                   to="/services"
                 >
                   Services ⮟
-                {/* {isDropdownOpen && (
-                  <div className="dropdown-menu-desktop p">
-                    <Link to="/services" onClick={() => setIsDropdownOpen(false)}>
-                      Service One
-                    </Link>
-                    <Link to="/services" onClick={() => setIsDropdownOpen(false)}>
-                      Service Two
-                    </Link>
-                  </div>
-                )} */}
-                <div className="dropdown-menu-desktop position-absolute rounded">
-                 <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services/personalHealthAssistance">
+           
+                <div className={`dropdown-menu-desktop position-absolute rounded   ${isDropdownOpen ? 'show' : ''}`}>
+                 <NavLink onClick={() => {
+                    setIsDropdownOpen(false);
+                    setIsMobileDropdownOpen(false);
+                    setIsMenuOpen(false);
+                  }}  className="nav-link" to="/services/personalHealthAssistance">
                   Personal Health Assistance
                 </NavLink>
-                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services/mentalHealthSupport">
+                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); setIsDropdownOpen(!isDropdownOpen) }} className="nav-link" to="/services/mentalHealthSupport">
                   Mental Health Support
                 </NavLink>
-                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services/elderlyDisabilityCare">
+                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); setIsDropdownOpen(!isDropdownOpen) }} className="nav-link" to="/services/elderlyDisabilityCare">
                   Elderly & Disability Care
                 </NavLink>
-                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services/careSupportStaffing">
+                <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); setIsDropdownOpen(!isDropdownOpen) }} className="nav-link" to="/services/careSupportStaffing">
                   Care home and Support Staffing
                 </NavLink>
                 </div>

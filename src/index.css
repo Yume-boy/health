@@ -156,7 +156,7 @@ h2,h3,h4,h5,h6 {
 .dropdown-menu-desktop {
     /* Keep existing styles like position, etc. */
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
@@ -175,8 +175,8 @@ h2,h3,h4,h5,h6 {
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.lampa:hover .dropdown-menu-desktop {
-    max-height: 200px; /* Adjust this value to fit your content */
+.lampa:hover .dropdown-menu-desktop.show {
+    max-height: 200px; 
     opacity: 1;
 }
 

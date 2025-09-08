@@ -9,7 +9,7 @@ const Hero = () => (
   <section
     className="text-white d-flex align-items-center"
     style={{
-      backgroundImage: `linear-gradient(rgba(12,19,25,0.45), rgba(12,19,25,0.45)), url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop')`,
+      backgroundImage: `linear-gradient(rgba(12,19,25,0.45), rgba(12,19,25,0.45)), url('https://www.commonwealthfund.org/sites/default/files/Home%20health%20aide%20helps%20patient%20in%20their%20home.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       minHeight: '520px'
@@ -19,7 +19,7 @@ const Hero = () => (
       <Row className="align-items-center">
         <Col lg={7} className="py-5">
           {/* <Badge bg="light" text="dark" className="mb-3">Home Care Services</Badge> */}
-          <h1 className="display-4 fw-bold">Home Care & Support Staff</h1>
+          <h1 className="display-4 fw-bold">Home Care & Care Home Staffing</h1>
           <p className="lead mb-4 ">Trusted professionals offering personalised care, companionship and household support — right where you feel safest.</p>
           <div className="d-flex align-items-center gap-2">
             <NavLink to={'/contact'}>
@@ -53,15 +53,17 @@ const Hero = () => (
 const ServicesDetailed = () => (
   <section id="services" className="py-5">
     <Container>
-      <h2 className="mb-4 text-center">Comprehensive Home Care Services</h2>
-      <p className="text-center text-muted mb-5">We provide a wide range of supports tailored to individual needs — from practical household help to complex care coordination.</p>
+      <h2 className="mb-4 text-center">Comprehensive Care Services</h2>
+      <p className="text-center text-muted mb-5">We provide a wide range of supports tailored to individual needs, whether delivered directly in people’s homes or as part of care home staffing. From practical household help to complex care coordination, our team adapts services to each setting.</p>
 
       <Row className="g-4">
         <Col md={6} lg={4}>
           <Card className="h-100 shadow-sm">
             <Card.Body>
               <h5>Daily Living Assistance</h5>
-              <p>Help with bathing, dressing, toileting, grooming and personal hygiene. Our staff are discreet, respectful and promote independence whenever possible.</p>
+              <p>In Home Care: Personalised support with bathing, dressing, grooming, toileting, and hygiene, delivered with discretion and respect. We promote independence while ensuring safety and dignity.</p>
+              <p>In Care Homes: Our staff integrate seamlessly into existing care teams, assisting residents with daily routines such as personal hygiene, mobility, and continence support, following established care plans.</p>
+              <p>Examples:</p>
               <ul>
                 <li>Bathing & grooming</li>
                 <li>Toileting & continence support</li>
@@ -75,7 +77,9 @@ const ServicesDetailed = () => (
           <Card className="h-100 shadow-sm">
             <Card.Body>
               <h5>Household & Domestic Help</h5>
-              <p>Keeping the home safe and comfortable — light cleaning, laundry, meal preparation and grocery shopping according to dietary needs and preferences.</p>
+              <p>In Home Care: Keeping the home safe and comfortable through light cleaning, laundry, meal preparation, and shopping tailored to dietary needs and preferences.</p>
+              <p>In Care Homes: Supporting housekeeping and hospitality teams by ensuring resident rooms are tidy, laundry is handled efficiently, and mealtime assistance is delivered with care.</p>
+              <p>Examples:</p>
               <ul>
                 <li>Meal prep & kitchen safety</li>
                 <li>Laundry & bed-making</li>
@@ -89,7 +93,10 @@ const ServicesDetailed = () => (
           <Card className="h-100 shadow-sm">
             <Card.Body>
               <h5>Medication & Health Support</h5>
-              <p>Prompting and assistance with medication (non-administered), monitoring of health indicators, liaison with nurses and clinicians where required.</p>
+              <p> In Home Care: Prompting or assisting with medication, checking vital health indicators, and coordinating with GPs, nurses, and healthcare providers as required.</p>
+              <p>In Care Homes: Working under the supervision of senior staff and nurses to ensure residents receive timely medication support, health monitoring, and accurate record-keeping.
+              </p>
+              <p>Examples:</p>
               <ul>
                 <li>Medication reminders</li>
                 <li>Basic vitals monitoring</li>
@@ -103,7 +110,8 @@ const ServicesDetailed = () => (
           <Card className="h-100 shadow-sm">
             <Card.Body>
               <h5>Mobility & Equipment Support</h5>
-              <p>Assistance with walking, use of walking frames, wheelchairs and transfers using safe manual handling techniques. We help with equipment set-up and safe usage.</p>
+              <p>In Home Care: Assistance with walking, safe transfers, and the use of mobility aids such as walking frames and wheelchairs, ensuring equipment is set up and used correctly.</p>
+              <p>In Care Homes: Supporting residents with safe mobility, transferring between beds, chairs, and communal areas, and working with moving & handling equipment in line with care home protocols.</p>
             </Card.Body>
           </Card>
         </Col>
@@ -112,7 +120,9 @@ const ServicesDetailed = () => (
           <Card className="h-100 shadow-sm">
             <Card.Body>
               <h5>Companionship & Social Connection</h5>
-              <p>Regular visits for conversation, activities, outings and social engagement to reduce isolation and support emotional wellbeing.</p>
+              <p>In Home Care: Friendly visits for conversation, hobbies, outings, and companionship that reduce isolation and enhance wellbeing.</p>
+              <p>In Care Homes: Supporting social activities, group sessions, and one-to-one engagement with residents, encouraging participation and maintaining emotional wellbeing.
+              </p>
             </Card.Body>
           </Card>
         </Col>
@@ -121,7 +131,8 @@ const ServicesDetailed = () => (
           <Card className="h-100 shadow-sm">
             <Card.Body>
               <h5>Respite for Carers</h5>
-              <p>Short-term care options so family carers can rest or manage other commitments with confidence their loved one is safe.</p>
+              <p>In Home Care: Providing short-term care at home so family carers can rest or manage other commitments, knowing their loved one is safe and supported.</p>
+              <p>In Care Homes: Temporary staffing to ensure continuity of care during peak demand or staff absence, giving permanent teams and families peace of mind.</p>
             </Card.Body>
           </Card>
         </Col>

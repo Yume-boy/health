@@ -43,7 +43,7 @@ const About = () => {
         <div className='container my-5 py-5'>
           <div class="row  align-items-start">
             <div class=" order-last col-12 col-lg-6">
-              <h3 className='my-4 display-5 fw-normal'>A Modern Approach</h3>
+              <h3 className='my-4 display-5 fw-normal'>CarePoint Modern Approach</h3>
               <p className='fs-5'>We believe every client deserves personalized recommendations for the team member best suited to their needs. That’s why, instead of following the usual approach, we’ve built a system tailored around what matters most — our patients' individual care requirements.</p>
             </div>
             <div class="col text-start fs-5 ">

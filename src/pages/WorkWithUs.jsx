@@ -32,7 +32,7 @@ const WorkWithUs = () => {
               <h3 className='display-5'>Work With CarePoint</h3>
               <div className='line mt-3'></div>
               <div className='w-75'>
-                <h4 className='my-4'>CarePointHealthcareSolutions regularly recruits for care positions across North East Somerset and our other service areas. Staff choose the hours that suit them, with varied and rewarding work helping others.</h4>
+                <h4 className='my-4'>CarePointHealthcareSolutions regularly recruits for care positions across North East and South West Somerset and our other service areas. Staff choose the hours that suit them, with varied and rewarding work helping others.</h4>
                 <h4>We will give you the flexibility to manage your own market along with the training and support to develop your career and to maximise your career and earning potential.</h4>
               </div>
             </div>

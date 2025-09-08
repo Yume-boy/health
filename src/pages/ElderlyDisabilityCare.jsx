@@ -99,7 +99,7 @@ const ElderlyDisabilityCare = () => {
       {/* Highlight Section */}
       <section className="py-5 text-center" style={{backgroundColor: '#fff7f0'}}>
         <Container>
-          <blockquote className="fs-4 fw-light fst-italic">“Caring for seniors and individuals with disabilities is not just about assistance – it’s about honoring their lives and empowering them to thrive.”</blockquote>
+          <blockquote className="fs-4 fw-light fst-italic">“Caring for elderly and individuals with disabilities is not just about assistance – it’s about honoring their lives and empowering them to thrive.”</blockquote>
         </Container>
       </section>
     </div>

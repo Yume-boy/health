@@ -33,7 +33,7 @@ const Hero = () => (
       </Breadcrumb>
 
       <h1 className="display-5 fw-bold">Personal Health Assistance</h1>
-      <p className="lead mb-2">Compassionate, person‑centred care at home and in the community.</p>
+      <p className="lead mb-2">Person-centered care at home, community and in care home settings.</p>
       <div className="mt-4 d-flex gap-2">
         {/* <Button variant="primary" href="#details">Learn more</Button> */}
         <Button variant="outline-light" href="#contact">Contact us</Button>
@@ -50,7 +50,7 @@ const ServiceOverview = () => (
           <Card.Body>
             <Card.Title as="h2" className="h5">What is Personal Care?</Card.Title>
             <Card.Text>
-              Our personal carer service supports individuals with everyday activities while promoting dignity and independence. Whether it’s at home or in the community, we provide reliable, compassionate care tailored to each person’s needs.
+              Our personal carer service supports individuals with everyday activities while promoting dignity and independence. Whether in their home, community or care home setting, we provide reliable, compassionate care tailored to each person’s needs.
             </Card.Text>
           </Card.Body>
         </Card>
@@ -80,7 +80,7 @@ const ServiceDetails = () => (
               <ListGroup.Item>Assistance with showering, grooming, dressing, and continence support</ListGroup.Item>
               <ListGroup.Item>Mobility support, safe transfers, and use of equipment</ListGroup.Item>
               <ListGroup.Item>Meal preparation and nutrition support</ListGroup.Item>
-              <ListGroup.Item>Prompting with medication (as directed)</ListGroup.Item>
+              <ListGroup.Item>Prompting and administering medication (as directed)</ListGroup.Item>
               <ListGroup.Item>Light household tasks such as cleaning and laundry</ListGroup.Item>
               <ListGroup.Item>Support to attend appointments, shopping, and social outings</ListGroup.Item>
             </ListGroup>
@@ -116,7 +116,7 @@ const ContactCard = () => (
       <Card.Title className="h5">Get in touch</Card.Title>
       <Card.Text className="text-muted">We’re here to answer your questions and help you arrange the right care.</Card.Text>
       <ListGroup variant="flush">
-        <ListGroup.Item>📞 +447512499615</ListGroup.Item>
+        <ListGroup.Item>📞 +447592642428</ListGroup.Item>
         <ListGroup.Item>✉️ hr@carepointhealthcaresolutions.co.uk</ListGroup.Item>
       </ListGroup>
       <div className="mt-3 d-grid">
@@ -142,15 +142,16 @@ const FooterCta = () => (
         <h2 className="h3 mb-2">Need personal care support?</h2>
         <p className="mb-4 text-muted">Let us provide safe, respectful, and person‑centred assistance for you or your loved one.</p>
         <div className="d-flex justify-content-center gap-2">
-          {/* <Button href="/contact" className="bg-primary">Talk to us</Button> */}
-           <button 
+          <NavLink to="/contact">
+         {/* <Button variant="primary">Contact us</Button> */}
+         <button 
                 type="" 
                 className="btn text-white my-2 align-self-center" 
                 style={{ backgroundColor: '#40BACA', height: '50px', width: '150px' }}
               >
-                Talk to us
+                Contact us
               </button>
-          {/* <Button href="#details" variant="outline-secondary">Learn more</Button> */}
+        </NavLink>
         </div>
       </Card>
     </Container>

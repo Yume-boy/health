@@ -122,7 +122,7 @@ const NavBar2 = () => {
                   Elderly & Disability Care
                 </NavLink>
                 <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); setIsDropdownOpen(!isDropdownOpen) }} className="nav-link" to="/services/careSupportStaffing">
-                  Care home and Support Staffing
+                  Home Care & Care Home Staffing
                 </NavLink>
                 </div>
                 </NavLink>
@@ -148,7 +148,7 @@ const NavBar2 = () => {
             ))}
             <li className="nav-item fw-normal my-2 mobile-dropdown-container">
               <div onClick={toggleMobileDropdown} style={{ cursor: 'pointer' }}>
-                <NavLink style={({ isActive }) => ({ color: isActive ? '#40BACA' : 'black' })} className="link nav-link" to="/services">
+                <NavLink style={({ isActive }) => ({ color: isActive ? '#40BACA' : 'black' })} className="link nav-link" to="">
                   Services ⮟
                 </NavLink>
               </div>
@@ -163,7 +163,7 @@ const NavBar2 = () => {
                   Elderly & Disability Care
                 </NavLink>
                 <NavLink onClick={() => { setIsMobileDropdownOpen(false); setIsMenuOpen(false); }} className="nav-link" to="/services/careSupportStaffing">
-                  Care home and Support Staffing
+                  Home Care & Care Home Staffing
                 </NavLink>
               </div>
             </li>

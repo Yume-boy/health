@@ -41,6 +41,9 @@ const HCA = () => {
              <RockingChair size={70} strokeWidth={1} className='align-self-center'/>
               <h3 className='my-4 fs-2 fw-semibold'>Personal Health Assistance</h3>
               <p className='fs-4'>Personalized in-home nursing and caregiver support.</p>
+              <div className='d-flex justify-content-center'>
+                <NavLink to={`/services/personalHealthAssistance`} className='readMore w-25'>Read More</NavLink>
+              </div>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>
@@ -50,6 +53,9 @@ const HCA = () => {
              <PillBottle size={70} strokeWidth={1} className='align-self-center'/>
               <h3 className='my-4 fs-2 fw-semibold'>Mental Health Support</h3>
               <p className='fs-5'>You’re not alone — we’re here to listen and help. </p>
+              <div className='d-flex justify-content-center'>
+                <NavLink to={`/services/mentalHealthSupport`} className='readMore w-25'>Read More</NavLink>
+              </div>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>
@@ -59,6 +65,9 @@ const HCA = () => {
              <Target size={70} strokeWidth={1} className='align-self-center'/>
               <h3 className='my-4 fs-2 fw-semibold'>Elderly & Disability Care</h3>
               <p className='fs-5'>Your comfort, dignity, and independence matter to us. </p>
+              <div className='d-flex justify-content-center'>
+                <NavLink to={`/services/elderlyDisabilityCare`} className='readMore w-25'>Read More</NavLink>
+              </div>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>
@@ -66,8 +75,11 @@ const HCA = () => {
            <div class="row align-items-start">
             <div class="col d-flex flex-column text-center order-last">
              <Kanban size={70} strokeWidth={1} className='align-self-center'/>
-              <h3 className='my-4 fs-2 fw-semibold'>Care home and Support Staffing</h3>
+              <h3 className='my-4 fs-2 fw-semibold'>Home Care & Care Home Staffing</h3>
               <p className='fs-5'>Connecting care homes with trusted support professionals. </p>
+              <div className='d-flex justify-content-center'>
+                <NavLink to={`/services/careSupportStaffing`} className='readMore w-25'>Read More</NavLink>
+              </div>
             </div>
             <div class="col text-start fs-5 d-none d-md-block">
             </div>

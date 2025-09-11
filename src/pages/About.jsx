@@ -52,7 +52,7 @@ const About = () => {
           </div>
         </div>
         
-        <div className='container my-5' style={{ fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" }}>
+        <div className='container my-5'>
             <div class=" d-flex flex-column align-items-center">
               <h3 className='display-5 segoe '>Our Mission</h3>
               <div className='line mt-3'></div>

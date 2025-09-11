@@ -43,7 +43,7 @@ const About = () => {
         <div className='container my-5 py-5'>
           <div class="row  align-items-start">
             <div class=" order-last col-12 col-lg-6">
-              <h3 className='my-4 display-5 fw-normal'>CarePoint Modern Approach</h3>
+              <h3 className='my-4 display-5 fw-normal text-center'>CarePoint Modern Approach</h3>
               <p className='fs-5'>We believe every client deserves personalized recommendations for the team member best suited to their needs. That’s why, instead of following the usual approach, we’ve built a system tailored around what matters most — our patients' individual care requirements.</p>
             </div>
             <div class="col text-start fs-5 ">
@@ -57,7 +57,7 @@ const About = () => {
               <h3 className='display-5 segoe fw-normal'>Our Mission</h3>
               <div className='line mt-3'></div>
               <div className='width-75'>
-                <h4 className='my-4 segoe text-center'>CarePoint Health Solutions LTD provides tailored healthcare services for vulnerable populations while fostering an inclusive work environment. We offer in-person and online emotional support to those most in need, ensuring accessibility through face-to-face and digital platforms. Our mission includes strengthening caregiver-client relationships through professional training and best practices in healthcare and emotional support.</h4>
+                <p className='my-4 fs-5 segoe text-center'>CarePoint Health Solutions LTD provides tailored healthcare services for vulnerable populations while fostering an inclusive work environment. We offer in-person and online emotional support to those most in need, ensuring accessibility through face-to-face and digital platforms. Our mission includes strengthening caregiver-client relationships through professional training and best practices in healthcare and emotional support.</p>
               </div>
             </div>
         </div>
@@ -66,15 +66,15 @@ const About = () => {
               <h3 className='display-5 fw-normal segoe'>Our Vision</h3>
               <div className='line mt-3'></div>
               <div className='width-75'>
-                <h4 className='my-4  text-center segoe'>Our goal is to provide exceptional healthcare support services for vulnerable populations (children, adults, elderly) across Bristol and Somerset while empowering young people and individuals from underrepresented backgrounds through inclusive career opportunities and  Emotional Support: Offering emotional guidance to individuals within healthcare settings, helping them build self-esteem and positive relationships through both in-person interactions and virtual support systems.</h4>
+                <p className='my-4 fs-5  text-center segoe'>Our goal is to provide exceptional healthcare support services for vulnerable populations (children, adults, elderly) across Bristol and Somerset while empowering young people and individuals from underrepresented backgrounds through inclusive career opportunities and  Emotional Support: Offering emotional guidance to individuals within healthcare settings, helping them build self-esteem and positive relationships through both in-person interactions and virtual support systems.</p>
               </div>
             </div>
         </div>
          <div className='container my-5'>
             <div class=" d-flex flex-column align-items-center">
-              <h3 className='display-5 fw-normal'>   Why Our Approach Stands Out</h3>
+              <h3 className='display-5 fw-normal text-center'>   Why Our Approach Stands Out</h3>
               <div className='line mt-3'></div>
-              <div className='w-75'>
+              <div className='w-lg-75 mt-3'>
                 <ul className='fs-5 lh-lg'>
                   <li><span className='fw-semibold'>Comprehensive Support Across All Ages: </span>Specialized healthcare and emotional support services for children, adults, and the elderly in person and online.</li>
                   <li><span className='fw-semibold'>Targeting Young People and the Global Majority: </span>Focus on career development for young individuals, especially from underrepresented backgrounds.</li>

@@ -57,7 +57,7 @@ const About = () => {
               <h3 className='display-5 segoe '>Our Mission</h3>
               <div className='line mt-3'></div>
               <div className='width-75'>
-                <p className='my-4 fs-5  text-center'>CarePoint Health Solutions LTD provides tailored healthcare services for vulnerable populations while fostering an inclusive work environment. We offer in-person and online emotional support to those most in need, ensuring accessibility through face-to-face and digital platforms. Our mission includes strengthening caregiver-client relationships through professional training and best practices in healthcare and emotional support.</p>
+                <p className='my-4 fs-5  text-center'>CarePoint Healthcare Solutions LTD provides tailored healthcare services for vulnerable populations while fostering an inclusive work environment. We offer in-person and online emotional support to those most in need, ensuring accessibility through face-to-face and digital platforms. Our mission includes strengthening caregiver-client relationships through professional training and best practices in healthcare and emotional support.</p>
               </div>
             </div>
         </div>

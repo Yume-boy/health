@@ -27,7 +27,7 @@ const HCA = () => {
             <h3 className='my-4 fs-2 fw-semibold'>Our Healthcare Solutions:</h3>
               <ul className='fs-5 lh-lg'>
                 <li><span className='fw-semibold'>Home Care Services –</span> Personalized in-home nursing and caregiver support.</li>
-                <li><span className='fw-semibold'>Elderly & Disability Care –</span> Assistance for seniors and individuals with special needs.</li>
+                <li><span className='fw-semibold'>Elderly & Disability Care –</span> Assistance for elderly and individuals with special needs.</li>
                 <li><span className='fw-semibold'>Medical Consultations –</span> Expert advice from our healthcare professionals.</li>
                 <li><span className='fw-semibold'>Rehabilitation & Therapy –</span> Physical and occupational therapy services.</li>
                 <li><span className='fw-semibold'>Mental Health Support –</span> Counseling and emotional support services.</li>
